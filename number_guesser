@@ -22,4 +22,4 @@ while status == 'wrong':
         print('Thats not a valid number')
     
 #step 5 - user is wrong, tell user if guess is high or low and go back to step 2
-#stpe 6 - user is correct, congratz!
+#step 6 - user is correct, congratz!
