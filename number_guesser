@@ -1,0 +1,25 @@
+#number guessing game
+#step 1 - computer need to pick a random number.
+import random
+computers_number = int(random.randrange(1,10))
+
+status = 'wrong'
+while status == 'wrong':
+    #step 2 - computer needs to ask user to guess
+    #step 3 - user guesses
+    guess = input("guess a number between 1 and 10\n")
+    try:
+       guessed_number = int(guess)
+        #step 4 - is the user right?
+       if computers_number == guessed_number:
+           print('well done you, guessed correct')
+           status = 'right'
+       elif guessed_number > computers_number:
+           print('sorry, you guessed too high')
+       else:
+           print('sorry you guessed to low')
+    except ValueError:
+        print('Thats not a valid number')
+    
+#step 5 - user is wrong, tell user if guess is high or low and go back to step 2
+#step 6 - user is correct, congratz!
